@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Churras_Calculator"
+             x:Class="Churras_Calculator.MainPage"
+             Title="Churra's Calculator"
+             BackgroundImage="Fundo.jpg">
+
+    <ScrollView>
+        <StackLayout>
+            <Image Source="LogoOficial.png"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"
+                   Margin="60,30,60,30"/>
+            <Label Text="Calcule já o custo do seu churrasco!"
+                   FontSize="25"
+                   VerticalOptions="CenterAndExpand"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Bold"
+                   TextColor="#1c0000"
+                   Margin="0,0,0,20"/>
+            <ImageButton Source="ButtonChurrasco.png"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Margin="50,0,50,100"
+                    Clicked="Pagina2"
+                    WidthRequest="150"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

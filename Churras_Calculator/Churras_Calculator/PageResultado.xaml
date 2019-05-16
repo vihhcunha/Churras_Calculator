@@ -1,0 +1,528 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Churras_Calculator.PageResultado"
+             Title="Resultado">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="LogoOficial.png"
+                   HeightRequest="100"
+                   Margin="0,25,0,25"/>
+            <Frame>
+                <Grid HeightRequest="300">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="25*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+            
+                    <Image Source="meat.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Carne de Boi"
+                           FontSize="21"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           x:Name="Carne"/>
+
+                    <Label Text="Alcatra"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_pr_alcatra"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="1"
+                           x:Name="lbl_kg_alcatra"/>
+
+                    <Label Text="Picanha"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_pr_picanha"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="2"
+                           x:Name="lbl_kg_picanha"/>
+
+                    <Label Text="Contra-Filé"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="3"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="3"
+                           x:Name="lbl_pr_cfile"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="3"
+                           x:Name="lbl_kg_cfile"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pig.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Carne de Porco"
+                           FontSize="21"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           x:Name="Porco"/>
+
+                    <Label Text="Linguiça"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_pr_linguica"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="1"
+                           x:Name="lbl_kg_linguica"/>
+
+                    <Label Text="Bisteca"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_pr_bisteca"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="2"
+                           x:Name="lbl_kg_bisteca"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="25*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="chicken.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Carne de Frango"
+                           FontSize="21"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           x:Name="Frango"/>
+
+                    <Label Text="Asa"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_pr_asa"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="1"
+                           x:Name="lbl_kg_asa"/>
+
+                    <Label Text="Coxa"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_pr_coxa"/>
+
+                    <Label Text="KG"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="2"
+                           x:Name="lbl_kg_coxa"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="30*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="soda.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Bebidas"
+                           FontSize="21"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           FontAttributes="Bold"
+                           HorizontalOptions="CenterAndExpand"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           x:Name="Bebidas"/>
+
+                    <Label Text="Cerveja"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_pr_cerveja"/>
+
+                    <Label Text="Latas"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="1"
+                           x:Name="lbl_kg_cerveja"/>
+
+                    <Label Text="Refrigerante"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="2"
+                          />
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_pr_refrigerante"
+                           />
+
+                    <Label Text="Garrafas"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="2"
+                           x:Name="lbl_kg_refrigerante"/>
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid HeightRequest="75">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="15*" />
+                        <ColumnDefinition Width="45*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="20*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="coal.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Carvão"
+                           FontSize="19"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Label Text="R$"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           x:Name="lbl_pr_carvao"/>
+
+                    <Label Text="Sacos"
+                           FontSize="17"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="3"
+                           Grid.Row="0"
+                           x:Name="lbl_kg_carvao"/>
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="40*" />
+                        <ColumnDefinition Width="20*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="money.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Total"
+                           FontSize="19"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="0"/>
+
+                    <Label Text="Custo total por pessoa: "
+                           FontSize="19"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"/>
+
+                    <Label Text="R$"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="1"
+                           x:Name="lbl_preco_pessoa"/>
+
+                    <Label Text="Custo total: "
+                           FontSize="18"
+                           TextColor="Black"
+                           FontAttributes="Bold"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"/>
+
+                    <Label Text="R$"
+                           FontSize="18"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="2"
+                           Grid.Row="2"
+                           x:Name="lbl_preco_total"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Churras_Calculator.Page2"
+             Title="Calcular Custo Churrasco">
+    <ScrollView>
+        <StackLayout>
+            <Image Source="LogoOficial.png"
+                   WidthRequest="100"
+                   Margin="0,40,0,40"/>
+
+            <Frame>
+                <Grid HeightRequest="200"
+                      RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <Image Source="meat.png"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           WidthRequest="40"
+                           Margin="0,0,20,0"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+                    <Label Text="Carne Bovina"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Margin="-15,0,0,0"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+                    <Button Text="?"
+                            CornerRadius="30"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            VerticalOptions="Center"
+                            HorizontalOptions="EndAndExpand"
+                            BorderWidth="1"
+                            FontSize="12"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BorderColor="Black"
+                            Clicked="InfoBois"
+                            Grid.Column="2"
+                            Grid.Row="0"/>
+
+                    <Label Text="Alcatra"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="alcatra"
+                            Grid.Column="2"
+                            Grid.Row="1"/>
+
+                    <Label Text="Picanha"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="picanha"
+                            Grid.Column="2"
+                            Grid.Row="2"/>
+
+                    <Label Text="Contra Filé"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="3"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="contrafile"
+                            Grid.Column="2"
+                            Grid.Row="3"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="160"
+                      RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="pig.png"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           WidthRequest="40"
+                           Margin="0,0,20,0"
+                           Grid.Row="0"
+                           Grid.Column="0"/>
+                    <Label Text="Carne Suína"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Margin="-15,0,0,0"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+                    <Button Text="?"
+                            CornerRadius="30"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            VerticalOptions="Center"
+                            HorizontalOptions="EndAndExpand"
+                            BorderWidth="1"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BorderColor="Black"
+                            Clicked="InfoPorcos"
+                            Grid.Column="2"
+                            Grid.Row="0"/>
+                    
+                    <Label Text="Linguiça"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="linguica"
+                            Grid.Column="2"
+                            Grid.Row="1"/>
+
+                    <Label Text="Bisteca"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="bisteca"
+                            Grid.Column="2"
+                            Grid.Row="2"/>
+
+
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="160"
+                      RowSpacing="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="30*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Image Source="chicken.png"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           WidthRequest="40"
+                           Margin="0,0,20,0"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+                    <Label Text="Carne de Frango"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalOptions="Center"
+                           Margin="-15,0,0,0"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+                    <Button Text="?"
+                            CornerRadius="30"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            VerticalOptions="Center"
+                            HorizontalOptions="EndAndExpand"
+                            BorderWidth="1"
+                            WidthRequest="30"
+                            HeightRequest="30"
+                            BorderColor="Black"
+                            Clicked="InfoFrango"
+                            Grid.Column="2"
+                            Grid.Row="0"/>
+
+                    <Label Text="Asa"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="asa"
+                            Grid.Column="2"
+                            Grid.Row="1"/>
+
+                    <Label Text="Coxa"
+                           Margin="20,0,0,0"
+                           TextColor="Black"
+                           FontSize="15"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"/>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="EndAndExpand"
+                            x:Name="coxa"
+                            Grid.Column="2"
+                            Grid.Row="2"/>
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="200"
+                   Margin="0,10,0,0">
+                <Grid RowSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="33.33*" />
+                        <ColumnDefinition Width="33.33*" />
+                        <ColumnDefinition Width="33.33*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.Column="0"
+                                 Grid.Row="0">
+                        <Image Source="man.png" 
+                               WidthRequest="70"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"
+                               Margin="0,10,0,30"/>
+                        <Label Text="Homens"
+                               TextColor="Black"
+                               FontSize="19"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                        <Entry WidthRequest="100"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontSize="20"
+                               TextColor="Black"
+                               Keyboard="Numeric"
+                               Text="0"
+                               x:Name="homem"
+                               Focused="entryHomem"
+                               Unfocused="entryHomem2"
+                               />
+                    </StackLayout>
+                    <StackLayout Grid.Column="1"
+                                 Grid.Row="0">
+                        <Image Source="woman.png" 
+                               WidthRequest="70"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"
+                               Margin="0,10,0,30"/>
+                        <Label Text="Mulheres"
+                               TextColor="Black"
+                               FontSize="19"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                        <Entry WidthRequest="100"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontSize="19"
+                               TextColor="Black"
+                               Keyboard="Numeric"
+                               Text="0"
+                               x:Name="mulher"
+                               Focused="entryMulher"
+                               Unfocused="entryMulher2"/>
+                    </StackLayout>
+                    <StackLayout Grid.Column="2"
+                                 Grid.Row="0">
+                        <Image Source="child.png" 
+                               WidthRequest="70"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"
+                               Margin="0,10,0,30"/>
+                        <Label Text="Crianças"
+                               TextColor="Black"
+                               FontSize="19"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                        <Entry WidthRequest="100"
+                               Text="0"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               HorizontalTextAlignment="Center"
+                               FontSize="19"
+                               TextColor="Black"
+                               Keyboard="Numeric"
+                               x:Name="crianca"
+                               Focused="entryCrianca"
+                               Unfocused="entryCrianca2"/>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+
+            <Frame HeightRequest="270"
+                   Margin="0,10,0,0">
+                <Grid RowSpacing="20"
+                      ColumnSpacing="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="55*"/>
+                        <RowDefinition Height="25*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="15*" />
+                        <ColumnDefinition Width="35*" />
+                        <ColumnDefinition Width="15*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Bebidas?"
+                           FontSize="23"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.ColumnSpan="4"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+                    <StackLayout Grid.Column="0"
+                                 Grid.Row="1">
+                        <Image Source="beer.png" 
+                               WidthRequest="80"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"/>
+                        <Label Text="Cerveja - 600ML"
+                               TextColor="Black"
+                               FontSize="19"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            x:Name="cerveja"
+                            Toggled="cervejas"
+                            Margin="-10,0,0,0"/>
+                    
+                    <StackLayout Grid.Column="2"
+                                 Grid.Row="1">
+                        <Image Source="soda.png" 
+                               WidthRequest="80"
+                               HorizontalOptions="CenterAndExpand"
+                               VerticalOptions="Center"/>
+                        <Label Text="Refri 2L"
+                               TextColor="Black"
+                               FontSize="19"
+                               VerticalTextAlignment="Center"
+                               HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                    <Switch IsToggled="false" 
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="CenterAndExpand"
+                            Grid.Column="3"
+                            Grid.Row="1"
+                            x:Name="refrigerante"
+                             Margin="-10,0,0,0"/>
+                    <Label HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           Text="Quantas pessoas bebem cerveja?"
+                           TextColor="Black"
+                           FontSize="19"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="3"
+                           Grid.Row="2"/>
+                    <Entry Text="0" 
+                           Keyboard="Numeric" 
+                           Grid.Column="3" 
+                           TextColor="Black"
+                           FontSize="19"
+                           Grid.Row="2"  
+                           x:Name="qt_pessoas"
+                           HorizontalTextAlignment="Center"
+                           IsEnabled="False"
+                           Focused="pessoaCerveja"
+                           Unfocused="pessoaCerveja2"/>
+                </Grid>
+            </Frame>
+            <Button Text="Continuar"
+                    FontSize="22"
+                    BackgroundColor="#540707"
+                    TextColor="White"
+                    CornerRadius="25"
+                    Margin="0,30,0,40"
+                    WidthRequest="170"
+                    HeightRequest="80"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="ChamarPagina3"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

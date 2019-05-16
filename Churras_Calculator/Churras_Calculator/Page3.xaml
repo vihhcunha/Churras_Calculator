@@ -1,0 +1,499 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Churras_Calculator.Page3"
+             Title="Modificações">
+    <ScrollView>
+        <StackLayout>
+            <Frame>
+                <Grid HeightRequest="300">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="25*"/>
+                        <RowDefinition Height="25*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="10*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Orientation="Horizontal"
+                                 Grid.Row="0"
+                                 Grid.ColumnSpan="3"
+                                 Grid.Column="0">
+                        <Image Source="meat.png"
+                               HorizontalOptions="StartAndExpand"
+                               Margin="10,10,10,10"/>
+
+                        <Label Text="Carne de Boi"
+                               FontSize="21"
+                               FontAttributes="Bold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalTextAlignment="Center"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <Label Text="Alcatra"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_alcatra"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="1"/>
+
+                    <Label Text="Picanha"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_picanha"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="2"/>
+
+                    <Label Text="Contra-Filé"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="3"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="3"
+                           x:Name="lbl_cfile"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="3"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="10*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Orientation="Horizontal"
+                                 Grid.Row="0"
+                                 Grid.ColumnSpan="3"
+                                 Grid.Column="0">
+                        <Image Source="pig.png"
+                               HorizontalOptions="StartAndExpand"
+                               Margin="10,10,10,10"/>
+
+                        <Label Text="Carne de Porco"
+                               FontSize="21"
+                               FontAttributes="Bold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalTextAlignment="Center"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <Label Text="Linguiça"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_linguica"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="1"/>
+
+                    <Label Text="Bisteca"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_bisteca"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="2"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="10*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Orientation="Horizontal"
+                                 Grid.Row="0"
+                                 Grid.ColumnSpan="3"
+                                 Grid.Column="0">
+                        <Image Source="chicken.png"
+                               HorizontalOptions="StartAndExpand"
+                               Margin="10,10,10,10"/>
+
+                        <Label Text="Carne de Frango"
+                               FontSize="21"
+                               FontAttributes="Bold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalTextAlignment="Center"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <Label Text="Asa"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_asa"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="1"/>
+
+                    <Label Text="Coxa"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_coxa"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="KG"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="2"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="225">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                        <RowDefinition Height="33.33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="30*" />
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Orientation="Horizontal"
+                                 Grid.Row="0"
+                                 Grid.ColumnSpan="3"
+                                 Grid.Column="0">
+                        <Image Source="soda.png"
+                               HorizontalOptions="StartAndExpand"
+                               Margin="10,10,10,10"/>
+
+                        <Label Text="Bebidas"
+                               FontSize="21"
+                               FontAttributes="Bold"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalTextAlignment="Center"
+                               TextColor="Black"/>
+                    </StackLayout>
+
+                    <Label Text="Cerveja"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                           x:Name="lbl_cerveja"
+                           Keyboard="Numeric"/>
+                    
+                    <Label Text="Latas"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="1"/>
+
+                    <Label Text="Coca-Cola"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                           x:Name="lbl_refrigerante"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="Garrafas"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="2"
+                           Grid.Row="2"/>
+                </Grid>
+            </Frame>
+
+            <Frame>
+                <Grid HeightRequest="75">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="30*" />
+                        <ColumnDefinition Width="20*" />
+                        <ColumnDefinition Width="20*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Source="coal.png"
+                           HorizontalOptions="StartAndExpand"
+                           Margin="10,10,10,10"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                    <Label Text="Carvão"
+                           FontSize="19"
+                           HorizontalTextAlignment="Start"
+                           Margin="10,0,0,0"
+                           VerticalTextAlignment="Center"
+                           TextColor="Black"
+                           Grid.Column="1"
+                           Grid.Row="0"/>
+
+                    <Entry Text="0"
+                           FontSize="19"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.Column="2"
+                           Grid.Row="0"
+                           x:Name="lbl_carvao"
+                           Keyboard="Numeric"/>
+
+                    <Label Text="Sacos"
+                           FontSize="19"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Start"
+                           Margin="5,0,0,0"
+                           Grid.Column="3"
+                           Grid.Row="0"/>
+                </Grid>
+            </Frame>
+            <Frame>
+                <Grid HeightRequest="300">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="33.33*"/>
+                    <RowDefinition Height="33.33*"/>
+                    <RowDefinition Height="33.33*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70*" />
+                    <ColumnDefinition Width="30*" />
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Total KG de carne: "
+                           FontSize="21"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="0"/>
+
+                <Label Text=""
+                       FontSize="21"
+                       TextColor="Black"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Center"
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       x:Name="lbl_totcarnes"/>
+
+                <Label Text="Total L de bebidas: "
+                           FontSize="21"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="1"/>
+
+                <Label Text=""
+                           FontSize="21"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="1"
+                       x:Name="lbl_totbebidas"/>
+
+                <Label Text="Total KG de carvão: "
+                           FontSize="21"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="0"
+                           Grid.Row="2"/>
+
+                <Label Text=""
+                           FontSize="21"
+                           TextColor="Black"
+                           VerticalTextAlignment="Center"
+                           HorizontalTextAlignment="Center"
+                           Grid.Column="1"
+                           Grid.Row="2"
+                       x:Name="lbl_totcarvao"/>
+                </Grid>
+            </Frame>
+            <Button Text="Calcular"
+                    FontSize="24"
+                    BackgroundColor="#540707"
+                    TextColor="White"
+                    CornerRadius="25"
+                    Margin="0,30,0,40"
+                    WidthRequest="170"
+                    HeightRequest="80"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="ChamarResultado"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,15 @@
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\bin\Debug\netstandard2.0\Churras_Calculator.deps.json
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\bin\Debug\netstandard2.0\Churras_Calculator.dll
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\bin\Debug\netstandard2.0\Churras_Calculator.pdb
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Churras_Calculator.csprojAssemblyReference.cache
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Page2.xaml.g.cs
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Page3.xaml.g.cs
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\PageResultado.xaml.g.cs
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Churras_Calculator.csproj.CoreCompileInputs.cache
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Churras_Calculator.AssemblyInfoInputs.cache
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Churras_Calculator.AssemblyInfo.cs
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Churras_Calculator.dll
+C:\Users\vinic\OneDrive\Projeto Churras Calculator\Churras_Calculator\Churras_Calculator\Churras_Calculator\obj\Debug\netstandard2.0\Churras_Calculator.pdb
